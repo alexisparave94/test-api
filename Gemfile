@@ -1,6 +1,8 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+gem 'google-cloud-storage'
+
 ruby "3.1.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
@@ -47,5 +49,5 @@ group :development do
 end
 
 group :production do
-  gem 'pg', "~> 1.1"
+  gem 'pg', '~> 1.1'
 end
